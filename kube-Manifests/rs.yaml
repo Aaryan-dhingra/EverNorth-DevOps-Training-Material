@@ -1,0 +1,17 @@
+apiVersion: apps/v1 
+kind: ReplicaSet
+metadata:
+  name: ever-rs-example
+spec: # Define the Behaviour of the replicaset
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web
+  template: - # Contains the pod defination
+    metadata:
+      labels:
+        app: web
+    spec: # Defines the behaviour of the Pod
+      containers:
+        - name: example-pod
+          image: muralisocial123/ever-example-test:3.0
