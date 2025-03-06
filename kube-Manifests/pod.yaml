@@ -6,5 +6,5 @@ spec:
   containers:
     - name: test-cont 
       image: muralisocial123/ever-example-test:3.0
-      port:
+      ports:
         - containerPort: 3000
