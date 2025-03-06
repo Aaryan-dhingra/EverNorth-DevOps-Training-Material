@@ -8,3 +8,13 @@ spec:
       image: muralisocial123/ever-example-test:3.0
       ports:
         - containerPort: 3000
+    - name: example-cont 
+      image: muralisocial123/retail-app-jnc:1.0
+      ports:
+       - containerPort: 80
+    - name: nginx-cont 
+      image: nginx:latest 
+      ports:
+        - containerPort: 80
+         
+    
