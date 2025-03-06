@@ -7,7 +7,7 @@ spec: # Define the Behaviour of the replicaset
   selector:
     matchLabels:
       app: web
-  template: - # Contains the pod defination
+  template: # Contains the pod defination
     metadata:
       labels:
         app: web
