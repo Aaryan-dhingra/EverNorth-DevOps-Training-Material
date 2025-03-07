@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transcation-Deployment 
+spec:
+  selector:
+    matchLabels:
+      app: ever
+  template:
+    metadata:
+      labels:
+        app: ever
+    spec:
+      containers:
+      - name: trans-container
+        image: muralisocial123/transcation-bank-app:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+          requests:
+            memory: "100Mi"
+            cpu: "100m"  
+        ports:
+        - containerPort: 3000
