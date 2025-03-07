@@ -13,3 +13,5 @@ eksctl create cluster --name murali-test-cluster \
 Delete :
 
 eksctl delete cluster --name murali-test-cluster --region us-west-2
+
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml - Metric Server 
