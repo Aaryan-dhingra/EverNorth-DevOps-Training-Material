@@ -23,3 +23,16 @@ spec:
             cpu: "100m"  
         ports:
         - containerPort: 3000
+--- 
+apiVersion: v1 
+kind: Service
+metadata:
+  name: transcation-svc
+spec:
+  selector:
+    app: ever
+  ports:
+  - port: 3002
+    targetPort: 3000
+    protocols: TCP
+  type: LoadBalancer  
