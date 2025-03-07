@@ -7,3 +7,9 @@ eksctl create cluster --name murali-test-cluster \
   --nodes-min 2 \
   --nodes-max 5 \
   --managed
+
+--------------------------
+
+Delete :
+
+eksctl delete cluster --name murali-test-cluster --region us-west-2
